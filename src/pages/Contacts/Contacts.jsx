@@ -8,6 +8,7 @@ import {
   BsGithub,
   BsLinkedin,
   BsTelephoneFill,
+  BsTwitter,
 } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
@@ -41,18 +42,18 @@ const Contacts = () => {
               </div>
               <p>Chandpur,Chattogram, Bangladesh</p>
             </div>
-            <div className="flex items-center gap-2 text-sm text-gray-300">
+            <Link to='https://wa.me/message/MHZG4JYQ735NE1' className="flex items-center gap-2 text-sm text-gray-300">
               <div className="p-2 rounded-full bg-slate-500/50 bg-opacity-40 group-hover:bg-primary duration-500 w-fit">
                 <BsTelephoneFill className="w-3 h-3 text-white  duration-500"></BsTelephoneFill>
               </div>
-              <p>Contact/WhatsApp: +880 1646-653053</p>
-            </div>
-            <div className="flex items-center gap-2 text-sm text-gray-300">
+              <p  className="text-cyan-500">Contact/WhatsApp: +880 1646-653053</p>
+            </Link>
+            <Link to={'mailto:ndmorsalin99@gmail.com?subject=Mail from Creating website'} className="flex items-center gap-2 text-sm text-gray-300">
               <div className="p-2 rounded-full bg-slate-500/50  bg-opacity-40 group-hover:bg-primary duration-500 w-fit">
                 <BsFillEnvelopeFill className="w-4 h-4 text-white duration-500"></BsFillEnvelopeFill>
               </div>
-              <p>ndmorsalin99@gmail.com</p>
-            </div>
+              <p  className="text-cyan-500">ndmorsalin99@gmail.com</p>
+            </Link>
             <Link to={'https://github.com/NDmorsalin'} className="flex items-center gap-2 text-sm text-gray-300">
               <div className="p-2 rounded-full bg-slate-500/50  bg-opacity-40 group-hover:bg-primary duration-500 w-fit">
                 <BsGithub className="w-4 h-4 text-white duration-500"></BsGithub>
@@ -70,6 +71,12 @@ const Contacts = () => {
                 <BsLinkedin className="w-4 h-4 text-white duration-500"></BsLinkedin>
               </div>
               <p className="text-cyan-500">linkedin.com/in/ndmorsalin</p>
+            </Link>
+            <Link to={'https://twitter.com/NaowafDaian'} className="flex items-center gap-2 text-sm text-gray-300">
+              <div className="p-2 rounded-full bg-slate-500/50  bg-opacity-40 group-hover:bg-primary duration-500 w-fit">
+                <BsTwitter className="w-4 h-4 text-white duration-500"></BsTwitter>
+              </div>
+              <p className="text-cyan-500">twitter.com/NaowafDaian</p>
             </Link>
             <div className="w-full h-full ">
               {/* <img src={contactImg} className="w-3/5 h-auto mx-auto md:ml-0" alt="" /> */}
